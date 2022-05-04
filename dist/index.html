@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Rapid Read</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1 id="title">Rapid Read</h1>
+
+    <form id="inputForm">
+
+      <!-- Text input -->
+      <!-- <input class="inputBox" id="textInput" type="text" placeholder="Enter text you want to RapidRead here" required=""> -->
+      <textarea class="form-control" id="textInput" rows="4"></textarea>
+
+      <!-- WPM input options -->
+      <label id="wpmLabel" for="wpmInput">Select words per minute</label>
+      <select class="form-control" id="wpmInput">
+        <option>50</option>
+        <option>100</option>
+        <option>200</option>
+        <option>300</option>
+        <option>400</option>
+      </select>
+
+      <!-- Empty div to get start button to next line -->
+      <div></div>
+
+      <!-- Start button -->
+      <button id="startButton">Start</button>
+
+    </form>
+
+    <!-- These words are rendered in via javascript -->
+    <h1 id="rapidWords"></h1>
+
+    <h3 id="credits">Developed By Virej Dasani</h3>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
